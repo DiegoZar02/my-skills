@@ -1,0 +1,30 @@
+@use "./utilities/" as *;
+
+section.new_skill {
+    align-items: center;
+    position: relative;
+    p {
+        margin-bottom: 0.5rem;
+    }
+    input.number {
+        width: 3.5rem;
+    }
+    span.mix {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        margin: 1rem 0;
+        input {
+            margin-left: 2rem;
+            background: transparent;
+            color: $c-light;
+            outline: none;
+        }
+    }
+    button {
+        width: 80%;
+        margin: 0 auto;
+    }
+}

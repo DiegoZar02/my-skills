@@ -1,0 +1,48 @@
+@use "./utilities/" as *;
+
+nav.nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    background: $c-primary;
+    font-size: 0.875rem;
+    text-transform: capitalize;
+    padding: 0.5rem 2rem;
+    color: $c-light;
+    height: 4rem;
+    filter: drop-shadow(0px 5px 3px rgba(0, 0, 0, 0.75));
+    a {
+        color: $c-light;
+        &.brand {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: center;
+
+            font-weight: 700;
+            font-size: 1.452rem;
+            margin-right: 2rem;
+            svg {
+                fill: $c-link;
+                margin-right: 0.5rem;
+                filter: drop-shadow(0px 0px 5px #000);
+                path {
+                    pointer-events: none;
+                }
+            }
+        }
+    }
+    ul {
+        list-style: none;
+        li a {
+            color: $c-light;
+            font-size: 1.125rem;
+            margin-right: 1rem;
+            &.active {
+                color: $c-link;
+            }
+        }
+    }
+}

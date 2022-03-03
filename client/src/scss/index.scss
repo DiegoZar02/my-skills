@@ -1,0 +1,44 @@
+@use "./utilities/" as *;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Montserrat";
+}
+html body {
+    background: $c-secondary;
+    font-weight: 400;
+    color: $c-light;
+
+    min-height: 100vh;
+    div#root {
+        min-height: 100vh;
+    }
+
+    a {
+        color: $c-link;
+        font-weight: 500;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    img {
+        vertical-align: top;
+    }
+    button {
+        border: none;
+        background: $c-link;
+        color: $c-light;
+        padding: 1rem 1.25rem;
+        border-radius: 8rem;
+        filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.75s ease;
+        &:hover {
+            background: #005fcc;
+        }
+    }
+}
